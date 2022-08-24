@@ -1,0 +1,37 @@
+<nav class="navbar">
+    <div class="toggle-btn">
+        <span><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a></span>
+        <span></span>
+        <span></span>
+        
+    </div>
+    <img src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo-2013-2015.png" class="logo" alt="">
+    <div class="search-box">
+        
+        <input type="text" class="search-bar" placeholder="search">
+        <button class="search-btn"><img src="./assets/search.png" alt=""></button>
+    </div>
+    <div class="user-options">
+        <img src="./assets/video.png" class="icon" alt="">
+        <img src="./assets/grid.png" class="icon" alt="">
+        <img src="./assets/bell.png" class="icon" alt="">
+        <div class="user-dp">
+            <img src="https://th.bing.com/th/id/OIP.Qz_6_xtigETpBhXMP76jlgHaH5?w=172&h=183&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+        </div>
+    </div>
+    <div id="main">
+        <button class="openbtn" onclick="openNav()"> </button>
+      </div>
+    
+      <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+</nav>
